@@ -79,7 +79,7 @@ GIF created with [SimpleScreenRecorder](http://www.maartenbaert.be/simplescreenr
 
 ## License
 
-    Copyright 2017 Brandon Chin
+    Copyright 2017 Mostafizur Rahman
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
