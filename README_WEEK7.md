@@ -23,17 +23,7 @@ Time spent: **14** hours spent in total
 
   - [] Affected source code: [branches/4.1/src/wp-includes/post.php](https://core.trac.wordpress.org/browser/branches/4.1/src/wp-includes/post.php)
   
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough:
- <img src='https://github.com/mostafizur188/web_security-week7/blob/master/Images/week7_demo2.gif' />
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
+  2. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
     - Tested in version:
@@ -43,6 +33,18 @@ Time spent: **14** hours spent in total
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    
+3. (Required) Vulnerability Name or ID
+  - [ ] Summary: 
+    - Vulnerability types:
+    - Tested in version:
+    - Fixed in version: 
+  - [ ] GIF Walkthrough:
+ <img src='https://github.com/mostafizur188/web_security-week7/blob/master/Images/week7_demo2.gif' />
+  - [ ] Steps to recreate: 
+  - [ ] Affected source code:
+    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
