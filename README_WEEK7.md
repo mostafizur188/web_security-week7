@@ -6,16 +6,23 @@ Time spent: **14** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+1. (Required) WordPress <= 4.3 - Authenticated Shortcode Tags Cross-Site Scripting (XSS)
+  - [] Summary: A stored, or persistent, cross-site scripting vulnerablilty which allows remote attackers to inject arbitrary web script or HTML by abusing the way unclosed HTML elements during the processing of shortcode tags are mishandled.
+    - Vulnerability types: Stored cross-site scripting (XSS)
+    - Tested in version: 4.1.1
+    - Fixed in version: 4.3
   - [ ] GIF Walkthrough:
  <img src='https://github.com/mostafizur188/web_security-week7/blob/master/Images/week7_demo1.gif' />
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+  - [] Steps to recreate: Create a new page or a post and place the following line in the body:
+
+    ```
+    [caption width="1" caption='<a href="' ">]</a><a href="http://onmouseover='alert(1)'">Over here!</a>
+    ```
+
+    When another user hovers over the text, the injected code is executed.
+
+  - [] Affected source code: [branches/4.1/src/wp-includes/post.php](https://core.trac.wordpress.org/browser/branches/4.1/src/wp-includes/post.php)
+  
 1. (Required) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
