@@ -23,16 +23,22 @@ Time spent: **14** hours spent in total
 
   - [] Affected source code: [branches/4.1/src/wp-includes/post.php](https://core.trac.wordpress.org/browser/branches/4.1/src/wp-includes/post.php)
   
-  2. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
+  2. (Required) WordPress  4.0-4.7.2 - Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
+  - [x] Summary: A vulnerablity which allows remote attackers to inject arbitrary web script or HTML via video URL in YouTube emebeds.
+    - Vulnerability types: Stored cross-site scripting (XSS)
+    - Tested in version: 4.1.1
+    - Fixed in version: 4.7.3
   - [ ] GIF Walkthrough:
    <img src='https://github.com/mostafizur188/web_security-week7/blob/master/Images/week7_demo3.gif' />
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+  - [x] Steps to recreate: Create a new page or post and place the following line in the body:
+
+    ```
+    [embed src='https://youtube.com/embed/12345\x3csvg onload=alert(1)\x3e'][/embed]
+    ```
+
+    When the page is viewed, the injected code is executed.
+
+  - [x] Affected source code: [branches/4.1/src/wp-includes/media.php](https://core.trac.wordpress.org/browser/branches/4.1/src/wp-includes/media.php) 
     
 3. (Required) Vulnerability Name or ID
   - [ ] Summary: 
